@@ -194,20 +194,48 @@ header h2 {
     padding-bottom:15px;
     display:none;
 }
+
 .top-wrapper {
+  display: flex;
+  flex-direction: row;
   text-align:left;
-  display:inline-block;
   width:100%;
+}
+
+.top-wrapper ul {
+  margin-block-start: 0;
+  margin-block-end: 0 ;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.top-wrapper .left,
+.top-wrapper .right {
+  width: 50%;
+}
+
+.top-wrapper img {
+  width: 100%;
+}
+
+.top-wrapper .right ul {
+  position: relative;
+}
+
+.top-wrapper .right li {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #slide ul{
-  position:relative;
+  /* position:relative; */
 }
 
 #slide li{
-	position:absolute;
-  width:100%;
-  
+	/* position:absolute; */
+  /* width:100%; */
 }
 
 .clear {

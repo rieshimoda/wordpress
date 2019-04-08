@@ -78,10 +78,10 @@ $(function () {
       }
   
       // targetクラスを削除
-      $("#button li a").removeClass("target");
+      // $("#button li a").removeClass("target");
   
       // 現在のボタンにtargetクラスを追加
-      $("#button li:nth-child(" + current + ") a").addClass("target");
+      // $("#button li:nth-child(" + current + ") a").addClass("target");
     }
   
     // ボタンをクリック
