@@ -1,0 +1,338 @@
+body {
+  color:#3b2102;
+  font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+  
+}	
+html { 
+  font-size: 60%;
+}
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+a:link, a:visited, a:hover, a:active {
+  color:#3b2102;
+  text-decoration:none;
+}
+
+ul { list-style: none; }
+a { text-decoration: none; color:#3b2102;}
+
+#menu-wrapper {
+    overflow: hidden;
+    max-width: 100%;
+    cursor: pointer;
+    position:fixed;
+    top:0;
+}
+
+
+#menu-wrapper #hamburger-menu {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    margin: 15px;
+}
+
+#menu-wrapper #hamburger-menu span {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    color: black;
+    background-color:#3b2102;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+/*アイコン*/
+#menu-wrapper #hamburger-menu span:nth-child(1) {
+    top: 0;
+}
+#menu-wrapper #hamburger-menu span:nth-child(2) {
+    top: 9px;
+}
+#menu-wrapper #hamburger-menu span:nth-child(3) {
+    top: 18px;
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#menu-wrapper #hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    left: -60px;
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(3) {
+    top: 9px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+/*アイコン終わり*/
+
+#menu-container .menu-list .menu-submenu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#menu-container .menu-list {
+    margin-top:-10px;
+    padding-left: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    box-shadow: rgba(100,100,100,0.2) 6px 2px 10px;
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: -100%;
+    position:fixed;
+}
+
+#menu-container .menu-list li.accordion-toggle, #menu-container .menu-list .menu-login {
+    font-size: 16px;
+    padding: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid #dbdcd2;
+}
+#menu-container .menu-list li:first-of-type {
+    border-top: 0;
+}
+
+.accordion-toggle, .accordion-content {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+  .accordion-content {
+    display: none;
+}
+
+.accordion-toggle a:before, .accordion-toggle a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 15px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #5a5858;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s ease-out;
+}
+
+.accordion-toggle a:before {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 1;
+    z-index: 2;
+}
+#btn{
+  cursor:pointer;
+}
+#menu{
+  text-align:left;
+}
+#menu ul,
+#menu li{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+#menu li a{
+  display:block;
+  padding:10px 0;
+  color: #444;
+  border-bottom: 1px solid #ccc;
+  text-decoration:none;
+}
+
+
+
+.container {
+  text-align:center;
+  margin:0 auto;
+  width:70%;
+}
+
+header h1 {
+  margin:0 auto;
+  padding-top:10px;
+  text-align:center;
+  font-weight:normal;
+}
+header h2 {
+  margin:0 auto;
+  padding-bottom:20px;
+  text-align:center;
+  font-weight:normal;
+}
+
+.header-list {
+  display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    display:inline-block;
+    justify-content: space-between;
+    padding-bottom:15px;
+    display:none;
+}
+.top-wrapper {
+  text-align:left;
+  display:inline-block;
+  width:100%;
+}
+
+#slide ul{
+  position:relative;
+}
+
+#slide li{
+	position:absolute;
+  width:100%;
+  
+}
+
+.clear {
+  clear:both;
+  height:1px;
+ 
+}
+.mid-wrapper {
+  height:auto;
+  margin: 20px 0;
+}
+.contents-item {
+  display:inline-block;
+  border:solid 1px #c4c2c2;
+  width:32%;
+  height:100%;
+  
+   
+}
+.contents-item img {
+  width:50%;
+  height:50%;
+  margin-bottom:15px;
+
+}
+.flex{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between; /*均等に間隔をあける*/
+  align-items: stretch;    /*全ての要素の高さを揃える*/
+}
+.bottom-wrapper {
+  position:relative;
+}
+.bottom-wrapper img {
+  width:100%
+}
+.bottom-wrapper p {
+ 
+  font-weight:normal;
+  color:white;
+  position:absolute;
+  bottom:5%;
+  right:5%;
+  display:inline-block;
+  text-align:left;
+  float:right;
+  font-size:0.1rem;
+}
+
+.instagram img {
+  width:95%;
+  margin:0 10px;
+  margin-top:5px;
+
+}
+.instagram h2 {
+  font-weight:normal;
+}
+.instagram h3 {
+  font-weight:normal;
+}
+
+.text-margin {
+  margin-top:20px;
+}
+input,textarea {
+  width: 100%;
+  border: 1px solid #a2a2a2;
+  padding: 0 2em;
+  border-radius: 4px;
+}
+textarea {
+  padding:  2em 2em;
+}
+input,.submit {
+  height:30px;
+}
+.placehold-text::placeholder {
+  margin-top:20px;
+}
+textarea {
+  height: 200px;
+}
+.submit {
+  border: 1px solid #a2a2a2;
+}
+.submit:hover {
+  background-color:#dee7ec;
+}
+.submit:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;
+}
+ footer {
+    margin-top:100px;
+    padding-bottom:150px;
+    background-color:#dee7ec;
+  }
+  footer h1 { 
+    font-weight:normal;
+    font-size:2.5rem;
+    padding-top:20px;
+    margin-bottom:0;
+  }
+  footer h2 {
+    font-size:1.0rem;
+    font-weight:normal;
+    margin-top:0;
+  }
+  table {
+    border-collapse: collapse;
+    margin:0 auto;
+    width:100%;
+    font-size:10px;
+  }
+  table  thead tr th{
+  border-bottom:0.5px solid #3b2102;
+  padding-top:20px;
+  padding-bottom:10px;
+  }
+
+  

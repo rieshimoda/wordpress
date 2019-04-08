@@ -1,0 +1,35 @@
+/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+@media screen and (min-width:470px) and ( max-width:1024px) {
+  #menu-container  {
+  display:none;
+}
+
+  .instagram-image {
+  display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.instagram-image2 {
+  display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.header-list {
+  display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:15px;
+}
+
+  
+
+}
