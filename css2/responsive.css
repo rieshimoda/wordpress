@@ -1,0 +1,46 @@
+/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+@media screen and (min-width:470px) and ( max-width:900px) {
+  .header-list {
+    display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom:15px;
+  }
+  #menu-container  {
+  display:none;
+}
+}
+/*　画面サイズがから1024pxここを読み込む　*/
+@media screen and (min-width:900px) {
+  .header-list {
+    display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom:15px;
+  }
+  #menu-container  {
+    display:none;
+  }
+  .lesson-contents {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+  }
+  .lesson {
+    width:45%;
+    text-align:left;
+    line-height:1.8em;
+   
+  }
+ 
+}

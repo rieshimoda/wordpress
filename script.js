@@ -99,5 +99,7 @@ $(function () {
       return false;
     });
   });
+//mid-wrapper
+$('#fadein').hide().fadeIn(1500);
 
 });
