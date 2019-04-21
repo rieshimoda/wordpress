@@ -5,23 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>シングルページ</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="style.css"><!-- ヘッダーフッダー読み込み -->
   <link rel="stylesheet" href="css2/style.css">
-  <link rel="stylesheet" href="css2/normalize.css">
+  <link rel="stylesheet" href="css/responsive.css"><!-- ヘッダーフッダー読み込み -->
   <link rel="stylesheet" href="css2/responsive.css">
-  <script src="jquery-2.1.4.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
   <!-- ヘッダー -->
   <header>
     <h1>Christa</h1>
-    <h2>グルーデコ教室米子</h2>
+    <h2>グルーデコ®️教室米子</h2>
     <div class="header-list container">
-      <a class="main-menu" href="#">News</a>
-      <a class="main-menu" href="#">About</a>
-      <a class="main-menu" href="#">Gluedeco</a>
-      <a class="main-menu" href="#">Lesson</a>
-      <a class="main-menu" href="#">Contact</a>
+      <ul class="flex">
+        <li><a class="main-menu" href="#">News</a></li>
+        <li><a class="main-menu" href="#">About</a></li>
+        <li><a class="main-menu" href="#">Gluedeco</a></li>
+        <li><a class="main-menu" href="#">Lesson</a></li>
+        <li><a class="main-menu" href="#">Contact</a></li>
+      </ul>
     </div>
   </header>
   <!-- スマホトグルメニュー -->
@@ -84,7 +88,7 @@
 
   <!-- トップ画像-->
   <div class="contents1 container">
-    <img src="./image/gluedeco.jpg">
+    <img class="flex" src="./image/gluedeco.jpg">
     <h2>レッスンについて</h2>
     <div class="lesson-contents">
       <div class="lesson">
@@ -94,7 +98,7 @@
           1回の所要時間は約2時間です。
           料金　体験レッスン　3500円(税込・材料費込み)
           作る作品によっては追加500円～がかかります。
-          <br>
+          <br><br>
           ※1名様からOKです。</p>
       </div>
       <div class="lesson">
@@ -110,13 +114,12 @@
     <div class="lesson-place">
       <h3>レッスン場所</h3>
       <p>出張レッスンをしております。
-          ご自宅、企業様の事務所等、ご希望の場所に出向きます。
-          材料や道具はこちらで全て準備いたします。
-          お気軽にお問い合わせ下さい。</p>
+        ご自宅、企業様の事務所等、ご希望の場所に出向きます。
+        材料や道具はこちらで全て準備いたします。
+        お気軽にお問い合わせ下さい。</p>
     </div>
   </div>
-
-
+  <!--フッター-->
   <footer>
     <div class="container">
       <div class="footer-logo" id="footer-id">
@@ -133,34 +136,30 @@
             <th>Contact</th>
           </tr>
         </thead>
-        <tr class="footer-list">
+        <tr class="footer-row">
           <td><a href="#">ブログ</a></td>
           <td><a href="#">Christaについて</a></td>
           <td><a href="#">グルーデコとは</a></td>
           <td><a href="#">体験レッスン</a></td>
           <td><a href="#">メールを送る</a></td>
         </tr>
-        <tr class="footer-list">
+        <tr class="footer-row">
           <td></td>
           <td></td>
           <td><a href="#">スワロフスキーの輝き</a></td>
           <td><a href="#">フリーレッスン</a></td>
           <td><a href="#">フォローする</a></td>
         </tr>
-        <tr class="footer-list">
+        <tr class="footer-row">
           <td></td>
           <td></td>
           <td></td>
           <td><a href="#">認定講師講座</a></td>
         </tr>
-
         </tfoot>
       </table>
-
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
-
 </html>
